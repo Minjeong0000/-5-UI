@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>슬라이드 네비게이터 바</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
+
+
+
+">
+<link rel="stylesheet" type="text/css" href="./writemsg.css">
+<script defer src="./writemsg.js"></script>
+<script>
+
+</script>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+      <a href="#" onclick="toggleNav(event)"><span class="menu-icon">&#9776;</span><span class="link-text">메뉴</span></a>
+      <a href="#"><span class="menu-icon">&#8962;</span><span class="link-text">홈</span></a>
+      <a href="#"><span class="menu-icon">&#128736;</span><span class="link-text">일정관리</span></a>
+      <a href="#"><span class="menu-icon">&#128100;</span><span class="link-text">근태관리</span></a>
+      <a href="#"><span class="menu-icon">&#128203;</span><span class="link-text">결재</span></a>
+      <a href="#"><span class="menu-icon">&#9742;</span><span class="link-text">연락처</span></a>
+      <a href="#"><span class="menu-icon">&#128101;</span><span class="link-text">커뮤니티</span></a> 
+    </div>
+
+    <div id="main" onclick="closeNav()">
+        <div class="column">
+
+            <div><h1><i class="fa-regular fa-message"></i>  쪽지</h1></div>
+            <div class="msg-menu">
+                <div>
+                    <i class="fa-solid fa-envelope">받은 쪽지함</i>                  
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i> 중요 쪽지함</li>
+                            <li> <i class="fa-solid fa-trash-can"></i> 휴지통</li>
+                        </ul>
+                </div>
+                <div><i class="fa-regular fa-envelope-open"></i> 읽은 쪽지함</div>
+                <div><i class="fa-regular fa-paper-plane"></i> 보낸 쪽지함</div>
+
+            </div>
+
+        </div>
+        <div class="column content">
+            <div class="receive-msg-container">
+
+                <div class="msg-top"> <h1>쪽지 보내기</h1></div>
+
+            </div>
+            <form action="">
+
+       
+            <table>
+                <tbody>
+                      <tr>
+                        <th>받는이 <div><button onclick="openModal()"><i class="fa-solid fa-user"></i></button></div>
+                        </th>
+                        <td><input type="text"></td>
+                      </tr>
+                      <tr>
+                        <th>내용</th>
+                        <td><textarea name="" id=""></textarea></td>
+                      </tr>
+                </tbody>
+              </table>
+              <tfoot><input type="submit" value="전송하기" ></tfoot>
+
+            </form>
+
+        </div>
+    </div>
+        <!-- 모달창 -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+
+          </div>
+        </div>
+</div>
+</body>
+</html>
